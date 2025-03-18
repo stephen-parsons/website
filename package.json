@@ -1,0 +1,28 @@
+{
+  "name": "dev-website",
+  "version": "1.0.0",
+  "description": "Personal dev website for Stephen Parsons",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/esbuild src/index.ts --bundle --outfile=public/index.js --watch",
+    "test": "test"
+  },
+  "author": "stephen.parsons",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "esbuild": "0.25.1",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
+}
