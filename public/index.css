@@ -4,7 +4,6 @@ html {
 
 body {
   padding: 20px 50px;
-  margin-bottom: 152px;
   background-color: #1f1e1e;
   color: white;
 }
@@ -79,9 +78,9 @@ p {
 }
 
 .section {
+  width: 800px;
   padding: 20px;
   margin-top: 3rem;
-  width: 800px;
 }
 
 .info {
@@ -90,7 +89,7 @@ p {
 }
 
 .min-width-col {
-  min-width: 8rem;
+  text-wrap: nowrap;
 }
 
 .title-container {
@@ -133,10 +132,6 @@ p {
   transform: scale(1.1, 1.1);
 }
 
-.chess .paragraph {
-  max-width: 400px;
-}
-
 .badge-logo {
   width: 24px;
   transition: 0.5s;
@@ -148,21 +143,29 @@ p {
 
 .badges {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-.chess {
+.chess-badges {
   display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
-  gap: 50px;
+  gap: 10px;
+  align-items: center;
 }
 
-.spotify-container {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  height: 152px;
-  width: calc(100vw - 40px);
-  z-index: 100;
+@media screen and (max-width: 840px) {
+  body {
+    padding: 5px;
+  }
+  .section {
+    width: auto;
+  }
+  .info {
+    gap: 5px;
+  }
+  .title-container {
+    flex-wrap: wrap;
+  }
+  .section {
+    margin-top: 1rem;
+  }
 }
