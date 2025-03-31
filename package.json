@@ -4,14 +4,14 @@
   "description": "Personal dev website for Stephen Parsons",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/esbuild src/index.ts --bundle --outfile=public/index.js --watch",
+    "build": "./node_modules/.bin/esbuild src/index.tsx --bundle --outfile=public/index.js --watch",
     "test": "test"
   },
   "author": "stephen.parsons",
   "license": "ISC",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

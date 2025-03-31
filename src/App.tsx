@@ -1,14 +1,26 @@
-import React from "react";
+import { useState } from "react";
 import Chess from "./Chess";
 import MusicPlayer from "./MusicPlayer";
 import Header from "./Header";
+import Title from "./Title";
+import About from "./About";
+import Experience from "./Experience";
+
+export type SectionLink = "About" | "Experience" | "Projects" | "Personal";
 
 export default function App() {
+  const [currentLink, setCurrentLink] = useState<SectionLink>("About");
+
   return (
     <>
-      <Header />
-      <Chess />
-      <MusicPlayer />
+      <Header setSelectedLink={setCurrentLink} currentLink={currentLink} />
+      <main className="main-content">
+        <Title />
+        {currentLink === "About" && <About />}
+        {currentLink === "Experience" && <Experience />}
+      </main>
+      {/* <Chess />
+      <MusicPlayer /> */}
     </>
   );
 }
