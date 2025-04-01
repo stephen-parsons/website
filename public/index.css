@@ -44,6 +44,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-links {
@@ -167,5 +168,8 @@ p {
   }
   .section {
     margin-top: 1rem;
+  }
+  .nav-links {
+    margin: 0;
   }
 }
