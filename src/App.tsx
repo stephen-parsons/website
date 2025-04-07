@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Chess from "./Chess";
-import MusicPlayer from "./MusicPlayer";
 import Header from "./Header";
 import Title from "./Title";
 import About from "./About";
